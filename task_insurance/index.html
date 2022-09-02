@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css"/>
+    <title>Insurance Calculator</title>
+</head>
+<body>
+    <div>
+        <h1>Insurance</h1>
+        <form>
+            <h2>Name</h2>
+            <input type="text" id="name"/>
+
+            <h2>Age</h2>
+            <input type="number" id="age"/>
+
+            <h2>Current Health</h2>
+            <p>(Please select one or more if you have any of the following condition:)</p>
+            <div>
+                <input type="checkbox" id="health1" checked value="hypertension"/>
+                <label for="health1">Hypertension</label>
+            </div>
+
+            <div>
+            <input type="checkbox" id="health2" value="bloodSugar"/>
+            <label for="health2">Blood Sugar</label>
+            </div>
+
+            <div>
+            <input type="checkbox" id="health3" value="overWeight"/>
+            <label for="health3">OverWeight</label>
+            </div>
+
+            <h2>Habits</h2>
+            <div>
+                <input type="checkbox" id="habit1" checked value="smoking"/>
+                <label for="habit1">Smoking</label>
+            </div>
+
+            <div>
+            <input type="checkbox" id="habit2" value="dailyexcercise"/>
+            <label for="habit2">Daily Excercise</label>
+            </div>
+
+            <div>
+            <input type="checkbox" id="habit3" value="drugs"/>
+            <label for="habit3">Drugs</label>
+            </div>
+
+            <div>
+                <input type="checkbox" id="habit4" value="alcohol"/>
+                <label for="habit4">Alcohol</label>
+                </div>
+
+                <div>
+                    <input type="checkbox" id="habit5" value="walking"/>
+                    <label for="habit5">Walking</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="habit6" value="meditation"/>
+                        <label for="habit6">Meditation</label>
+                        </div>
+
+                        <div>
+                            <input type="checkbox" id="habit7" value="yoga"/>
+                            <label for="habit7">Yoga</label>
+                            </div>
+                <button type="submit">Calculate</button>
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

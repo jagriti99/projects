@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pizza</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+<h1>Pizza Place</h1>
+<p><b>Welcome! Place your order.</b></Welcome></p>
+</header>
+
+
+<div class="container">
+<form>
+   <label for="customerName" style = "font-weight:bolder"> Hi! let's have your name first<label>
+        <input type="text"  id="name"><br>
+    <p>
+    <label for="psize" style = "font-weight:bold" id="psize" >Choose your piza size</label><br>
+       <input type="radio" name="psize" checked value="abc">For 2, the prize is 7,50€<br>
+
+        <input type="radio" name="psize"value="abc">For 4, the prize is 10,50€.<br>
+
+        <input type="radio" name="psize"value="abc">For 6, the prize is 12,50€.<br>
+
+        <input type="radio"  name="psize"value="abc">For 8, the prize is 15,50€.<br>
+    </p>
+
+    <label for="topping"style = "font-weight:bold">Add some toppings</label><br>
+    <div class="topping">
+        <p style ="font-weight:lighter;" >(Select any four for free, after that +50 cents each topping)</p>
+
+    </div>
+   
+    <input type="checkbox" id="top0" name="top0" >
+    <label for="top1">Sausage</label><br>
+
+    <input type="checkbox" id="top1" name="top1" value="">
+    <label for="top1">Jalapeno</label><br>
+
+    <input type="checkbox" id="top2" name="top2">
+    <label for="top2">Pesto</label><br>
+
+    <input type="checkbox" id="top3" name="top3" value="">
+    <label for="top3">cheese</label><br>
+
+    <input type="checkbox" id="top4" name="top4" value="">
+    <label for="top4">Pineapple</label><br>
+
+    <input type="checkbox" id="top5" name="top5" value="">
+    <label for="top5">Mushroom</label><br>
+
+    <input type="checkbox" id="top6" name="top5" value="">
+    <label for="top5">Bacon</label><br>
+
+    <input type="checkbox" id="top5" name="top5" value="">
+    <label for="top5">Pepperoni</label><br>
+
+    <input type="checkbox" id="top5" name="top5" value="">
+    <label for="top5">Onions</label><br>
+
+    <input type="checkbox" id="top5" name="top5" value="">
+    <label for="top5">Chicken</label><br>
+
+    <p><label for="delivery"style = "font-weight:bold">Delivery</label><br>
+    <select id="delivery" name="delivery">
+        <option value="">Delivery home, +5€</option>
+        <option value="">Eat in</option>
+        <option value="">Pickup food</option>
+    </select>
+</p>
+   
+   <input class="button" type="submit" value="Order Now!">
+    
+</form>
+</div>
+ 
+<p id="answer"></p>
+
+
+<script src="script.js"></script>
+</body>
+
+</html>
+
