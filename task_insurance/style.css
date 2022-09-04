@@ -18,12 +18,13 @@
 
    }
 body{
-   
+   background-image: url('http://online.hbs.edu/Style%20Library/api/resize.aspx?imgpath=/online/PublishingImages/blog/health-care-economics.jpg&w=1200&h=630');
     background-repeat: no-repeat;
-    background-size: 80% 100%;
+    background-size: 50% 100%;
     background-position: right top;
     background-color: aliceblue;
     font-family: 'Nunito', sans-serif; 
+
 }
 button{
     background-color: rgb(41, 101, 242);
