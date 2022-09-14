@@ -1,0 +1,148 @@
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    overscroll-behavior: none;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color:rgb(250, 206, 149);
+    font-family: 'Roboto',sans-serif;
+    color:white;
+}
+header, 
+section, 
+footer{
+    padding: 2rem;
+   
+}
+.btn{
+    background-color: chocolate;
+    padding:0.5rem 1rem;
+    border: none;
+    border-radius: 5px;
+    font-family: inherit;
+    cursor:pointer;
+    color:white;
+}
+h2,
+p{
+margin-bottom: 2rem;
+}
+header{
+    position: sticky;
+    top:0;
+    height: 100px;   
+    /* //use pixels as it does not change with the change in screen size */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header a{
+    color: white;
+    text-decoration: none;
+}
+nav ul li{
+    display:inline-block;
+    margin: 1rem;
+}
+.bg{
+    background-color: white;
+   
+}
+.bg a,
+.bg span {
+    
+    color:rgb(167, 163, 163);
+}
+
+#mob_button{
+    display: none;
+}
+section{
+    min-height: 50vh;
+    scroll-margin-top: 5rem;
+}
+
+section:first-child, header {
+    background-color: #216682;
+}
+
+section:nth-child(2){
+    background-color: #a8c8d4;
+}
+
+section:last-child{
+    background-color: #e3e9eb;
+}
+
+.overlay {
+    position: fixed;
+    top:0;
+    left:0;
+    height:100%;
+    width:100%;
+    background-color: rgba(3, 55, 55, 0.841);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal{
+    position: relative;
+    background: white;
+    min-height: 50vh;
+    width: 20vw;
+    border-radius: 10px;
+    color:#032330;
+    padding:3rem;
+    box-shadow: 0 0 15px #216682;
+}
+
+.close{
+    position: absolute;
+    top: 20px;
+    right:20px;
+}
+
+.overlay,
+.modal, 
+.close{
+    display: none;
+}
+
+#back_to_top{
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    display: none;
+}
+@media (max-width:800px){
+    nav ul{
+        display: none;
+    }
+    h1{
+        font-size:1.5rem;
+    }
+    #mob_button{
+        background-color: transparent;
+        display: block;
+        border:none;
+        color: white;
+        padding: 1rem;
+    }
+}
+nav.responsive ul{
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 85px;
+}
+
+nav.responsive ul li {
+    display:block;
+}
