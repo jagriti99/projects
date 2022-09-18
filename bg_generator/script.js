@@ -1,17 +1,24 @@
-const color1 = document.getElementById("color1");
-const color2 = document.getElementById("color2");
+const form = document.querySelector("#gradient");
 
-const body = document.getElementById("gradient");
-const gradient1 = document.querySelector("gradient1");
+let color1 = document.querySelector(".color1");
+let color2 = document.querySelector(".color2");
 
-function generate() {
-  const arrow = document.querySelector('input[name="arrow"]:checked').value;
-  body.style.background =
-    "linear-gradient(" + color1.value + "," + color2.value + ")";
-  // body.style.background = `linear-gradient(${color1.value},${color2.value})`;
+let direction = document.querySelectorAll('input[name="direction"]');
+let text = document.querySelector("p");
 
-  gradient1.textContent = body.style.background + ";";
-}
+const gradient1 = (event) => {
+  event.preventDefault();
+  let selValue;
+  for (const val of direction) {
+    if (val.checked) {
+      selValue = val.value;
+    }
+  }
 
-color1.addEventListener("input", generate);
-color2.addEventListener("input", generate);
+  let brGradient = `linear-gradient(${selValue}, ${color1.value}, ${color2.value})`;
+
+  document.body.style.backgroundImage = brGradient;
+  text.textContent = brGradient + ";";
+};
+
+form.addEventListener("change", gradient1);
