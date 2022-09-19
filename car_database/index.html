@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Car Database</title>
+</head>
+<body>
+    <form id="search">
+        <h2>Search car by licence number</h2>
+        <div>
+            <label for="licence_number">Licence number</label>
+            <input type="text" 
+            id = "licence_number">
+            <button>search</button>
+        </div>
+        
+        <hr size="30" color="lightblue">
+    </form>
+    <form id="cars" onsubmit="addRow(); return false;">
+        <h2>Insert car data</h2>
+        <div class="car">
+        <div>
+            <label for="lic_number">Licence number</label>
+            <input type="text" 
+            id = "lic_number">
+            
+        </div>
+
+        <div>
+            <label for="car_maker">Car maker</label>
+            <input type="text" 
+            id = "car_maker">
+            
+        </div>
+        <div>
+            <label for="car_model">Car model</label>
+            <input type="text" 
+            id = "car_model">
+            
+        </div>
+        <div>
+            <label for="car_owner">Car owner</label>
+            <input type="text" 
+            id = "car_owner">
+            
+        </div>
+        <div>
+            <label for="car_price">Car price</label>
+            <input type="text" 
+            id = "car_price">
+            
+        </div>
+        <div>
+            <label for="car_color">Car color</label>
+            <input type="text" 
+            id = "car_color">
+            
+        </div>
+        <div>
+            <button type="submit" id="add">Add</button>
+            <button type="reset" id="reset">Reset</button>
+        </div>
+    </div>
+    </form>
+   <script src="script.js"></script>
+</body>
+</html>

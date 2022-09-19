@@ -1,0 +1,46 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+form{
+    background: whitesmoke;
+    width:40vh;
+    height:65vh;
+}
+#search{
+    padding:5px;
+    margin-top: 5px;
+    width:auto;
+    height:auto;
+    background: whitesmoke;
+}
+
+label {
+    display:inline-block;
+    width:200px;
+    padding:5px;
+    margin-top:2px;
+    
+}
+input, label{
+ margin-left:10px;
+ width: 180px;
+}
+button{
+    background-color: rgb(86, 86, 242);
+    color:white;
+    padding: 5px;
+    margin-top:5px;
+    margin-left: 10px;
+    width: 80px;
+    border-radius: 5px;
+    box-shadow: none;
+
+}
+
+table, td{
+    border: 3px solid #333;
+    border-collapse: collapse;
+    padding: 20px;
+}
