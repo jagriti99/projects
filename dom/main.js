@@ -2,14 +2,18 @@ const header = document.querySelector("header");
 const backButton = document.querySelector("#back_to_top");
 const mobButton = document.querySelector("#mob_button");
 const nav = document.querySelector("nav");
-const links = document.querySelector();
+const links = document.querySelectorAll("nav ul li a");
+const btn = document.querySelector(".btn");
+const modalButton = document.querySelector("#mobButton");
+const closeButton = document.querySelector("#closeButton");
+const overlay = document.querySelector(".overlay");
 
 window.onscroll = function () {
   scrollFunction();
 };
 
 const scrollFunction = () => {
-  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+  if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
     header.classList.add("bg");
     backButton.style.display = "block";
   } else {
@@ -23,11 +27,20 @@ const getToTop = () => {
   document.documentElement.scrollTop = 0;
 };
 const mobMenu = () => {
-  if (navigator.classList.contains("responsive")) {
-    navigator.class.remove("responsive");
+  if (nav.classList.contains("responsive")) {
+    nav.classList.remove("responsive");
+    document.body.style.overflow = "";
   } else {
     nav.classList.add("responsive");
+    document.body.style.overflow = "hidden";
   }
 };
+
+const modal = () => {
+  overlay.classList.toggle("visible");
+};
+
 backButton.addEventListener("click", getToTop);
 mobButton.addEventListener("click", mobMenu);
+modalButton.addEventListener("click", modal);
+closeButton.addEventListener("click", modal);
