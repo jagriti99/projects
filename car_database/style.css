@@ -7,13 +7,14 @@ form{
     background: whitesmoke;
     width:40vh;
     height:65vh;
+   
 }
 #search{
     padding:5px;
     margin-top: 5px;
     width:auto;
     height:auto;
-    background: whitesmoke;
+    background: rgb(86, 86, 242);
 }
 
 label {
@@ -38,9 +39,31 @@ button{
     box-shadow: none;
 
 }
+.cars{
+    display: flex;
+}
+.database{
+   flex:3;
+   margin-left: 20px;
+    
+}
 
-table, td{
-    border: 3px solid #333;
-    border-collapse: collapse;
-    padding: 20px;
+table, th, tr,td{
+    border:0.2rem  white;
+    border-collapse:collapse;
+    padding:5px;
+}
+th{
+    background-color: rgb(86, 86, 242);
+    color:white;
+}
+tr{
+background-color: antiquewhite;
+}
+td{
+    text-align: center;
+}
+span{
+    color:blue;
+    
 }

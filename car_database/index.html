@@ -8,18 +8,20 @@
     <title>Car Database</title>
 </head>
 <body>
-    <form id="search">
+    
         <h2>Search car by licence number</h2>
-        <div>
+       
+        <div class ="search">
             <label for="licence_number">Licence number</label>
             <input type="text" 
             id = "licence_number">
-            <button>search</button>
+            <button id="searchBtn">Search</button>
+            <p id = "result"></p>
         </div>
         
         <hr size="30" color="lightblue">
-    </form>
-    <form id="cars" onsubmit="addRow(); return false;">
+        <div class ="cars">
+    <form>
         <h2>Insert car data</h2>
         <div class="car">
         <div>
@@ -49,7 +51,7 @@
         </div>
         <div>
             <label for="car_price">Car price</label>
-            <input type="text" 
+            <input type="number" 
             id = "car_price">
             
         </div>
@@ -65,6 +67,21 @@
         </div>
     </div>
     </form>
+
+    <div class="database">
+        <h2>Cars Database</h2>
+        <table id = "ctable">
+            <tr id="myRow">
+                <th>Licence</th>
+                <th>Maker</th>
+                <th>Model</th>
+                <th>Owner</th>
+                <th>Price</th>
+                <th>Color</th>
+            </tr>
+        </table>
+    </div>
+</div>
    <script src="script.js"></script>
 </body>
 </html>
